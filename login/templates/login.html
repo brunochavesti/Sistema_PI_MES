@@ -1,0 +1,28 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+    <link href="{% static 'login/css/login.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block 'body' %}
+
+    <div class="container-fluid bg-login">
+        
+        <div class="row">
+            <div class="col-md">
+                <h3 class="logo"></h3>
+
+                {% include "partials/login/login.html" %}
+
+            
+
+            </div>
+
+            <div class="col-md bg-img">
+            
+            </div>
+        
+        </div>
+    </div>
+
+{% endblock %}
